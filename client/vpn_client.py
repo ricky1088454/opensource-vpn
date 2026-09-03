@@ -37,6 +37,7 @@ class VPNClient:
 
     def _ssl_context(self) -> ssl.SSLContext:
         context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
+        context.minimum_version = ssl.TLSVersion.TLSv1_2
         if self.cafile:
             context.load_verify_locations(cafile=self.cafile)
         else:

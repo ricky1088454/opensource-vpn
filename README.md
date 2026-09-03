@@ -28,7 +28,11 @@ An open-source VPN application built with Python. It includes a TLS-enabled VPN 
    python -m pip install cryptography pyyaml
    ```
 2. Generate server TLS certificate and key in `certs/` (`server.crt`, `server.key`).
-3. Update `config/server.json` and `config/client.json` as needed.
+3. Generate password hashes for `config/server.*` users:
+   ```bash
+   python -c "from vpn_core.auth import Authenticator; print(Authenticator.hash_password('your-password'))"
+   ```
+4. Update `config/server.json` and `config/client.json` as needed.
 
 ## Usage
 

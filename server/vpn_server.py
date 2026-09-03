@@ -47,6 +47,7 @@ class VPNServer:
 
     def _ssl_context(self) -> ssl.SSLContext:
         context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
+        context.minimum_version = ssl.TLSVersion.TLSv1_2
         if self.certfile and self.keyfile:
             context.load_cert_chain(self.certfile, self.keyfile)
         else:

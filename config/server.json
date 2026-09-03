@@ -3,8 +3,8 @@
   "port": 8443,
   "shared_secret": "change-me",
   "users": {
-    "alice": "13dc8554575637802eec3c0117f4156f6d681d0ef5f8991bf4f90fef2f3f6f93",
-    "bob": "da7655b5bf67039c811a5f2db554a95a4a2447f8b9f2fbf813233191d42f9f6a"
+    "alice": "pbkdf2_sha256$200000$9ed8019fb2c190b5a0c670f8f2890f36$86fc5c48e416bed291e432ecf559d2cb6e9a77c077f88126d3651cf5a5676c72",
+    "bob": "pbkdf2_sha256$200000$aa7813513ba1b6b84cf122bd23bf7fa6$c77d4a6a71c79577a1a6ef323e430d8037c9e453401c996def2710eaf7821a48"
   },
   "tls": {
     "certfile": "./certs/server.crt",
