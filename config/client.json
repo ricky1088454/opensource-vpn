@@ -1,0 +1,12 @@
+{
+  "server_host": "127.0.0.1",
+  "server_port": 8443,
+  "username": "alice",
+  "password": "alice123",
+  "virtual_ip": "10.8.0.2",
+  "shared_secret": "change-me",
+  "tls": {
+    "cafile": "./certs/server.crt"
+  },
+  "log_level": "INFO"
+}
