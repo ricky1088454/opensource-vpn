@@ -1,0 +1,14 @@
+{
+  "host": "127.0.0.1",
+  "port": 8443,
+  "shared_secret": "change-me",
+  "users": {
+    "alice": "13dc8554575637802eec3c0117f4156f6d681d0ef5f8991bf4f90fef2f3f6f93",
+    "bob": "da7655b5bf67039c811a5f2db554a95a4a2447f8b9f2fbf813233191d42f9f6a"
+  },
+  "tls": {
+    "certfile": "./certs/server.crt",
+    "keyfile": "./certs/server.key"
+  },
+  "log_level": "INFO"
+}
