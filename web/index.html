@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenSource VPN Web</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>OpenSource VPN Web</h1>
+      <p>Enter a URL to open it through this web proxy.</p>
+
+      <form id="proxy-form">
+        <input
+          id="url-input"
+          type="url"
+          placeholder="https://example.com"
+          required
+        />
+        <button type="submit">Open</button>
+      </form>
+
+      <p id="status" role="status"></p>
+
+      <section id="text-output" hidden>
+        <h2>Response</h2>
+        <pre id="response-pre"></pre>
+      </section>
+
+      <iframe id="page-frame" title="Proxied page"></iframe>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
